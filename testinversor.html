@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Fields Investment Company </title>
+</head>
+<body>
+<!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3" data-aos="fade-down">
+    <div class="container">
+      <a href="#" class="navbar-brand">Fields Investment Company</a>
+
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="nav-link">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="preguntas.html" class="nav-link">Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form -->
+  <section class="bg-dark text-light p-3 text-center first-section">
+    <div class="container plazofijo p-5 align-items-center">
+      <div class="align-items-center p-5">
+        <div data-aos="zoom-in">
+          <h1>Test del <span class="text-warning">Inversor</span></h1>
+          <p class="lead my-2">Con esta aplicacación vas conocer que clase de inversor eres</p>
+        </div>
+      </div>
+      <form method="" action="" id="formulario" class="">
+        <!-- Nivel de conocimiento -->
+        <fieldset>
+        <h2>¿Cuál es tu nivel de conocimiento sobre finanzas?</h2>
+        <input type="radio" name="conocimiento" value="1" id="conocimiento1">
+            <label for="conocimiento1">Nulo. No conozco ni realicé inversiones.</label>
+
+        <input type="radio" name="conocimiento" value="2" id="conocimiento2">
+            <label for="conocimiento2">Poco. Sólo utilizo servicios bancarios (ej. Plazo Fijo).</label>
+
+        <input type="radio" name="conocimiento" value="3" id="conocimiento3">
+            <label for="conocimiento3">Mínimo. No realicé nunca inversiones fuera del banco, pero conozco sobre algunas opciones para invertir.</label>
+
+        <input type="radio" name="conocimiento" value="4" id="conocimiento4">
+            <label for="conocimiento4">Intermedio. Realicé inversiones en forma ocasional y conozco los riesgos del mercado de capitales.</label>
+
+        <input type="radio" name="conocimiento" value="5" id="conocimiento5">
+            <label for="conocimiento5">Experto o profesional de finanzas. Tengo mucho conocimiento y experiencia en inversiones. Conozco el riesgo y rentabilidad de los distintos productos.</label>
+            
+        <!-- Nivel de experiencia -->
+        <h2>¿Cuál es tu nivel de experiencia invirtiendo?</h2>
+        <input type="radio" name="experiencia" value="1" id="experiencia1">
+            <label for="experiencia1">Ninguna. Como mucho compré o vendí moneda extranjera en el banco.</label>
+
+        <input type="radio" name="experiencia" value="2" id="experiencia2">
+            <label for="experiencia2">Mínima. Realicé depósitos en Plazo Fijo bancario y/o compra/venta de moneda extranjera.</label>
+
+        <input type="radio" name="experiencia" value="3" id="experiencia3">
+            <label for="experiencia3">Intermedia. Invertí en Fondos Comunes de Inversión y/o algunas de las anteriores.</label>
+
+        <input type="radio" name="experiencia" value="4" id="experiencia4">
+            <label for="experiencia4">Avanzada. Realicé compra/venta de acciones y/o bonos y/o algunas de las anteriores.</label>
+
+        <input type="radio" name="experiencia" value="5" id="experiencia5">
+            <label for="experiencia5">Experto o profesional en finanzas. Invertí en derivados financieros y/o alguna de las anteriores.</label>
+
+        <!-- Porcentaje de ahorros mensuales -->
+        <h2>¿Qué porcentaje de tu ingreso podés ahorrar mensualmente?</h2>
+        <input type="radio" name="ahorros" value="1" id="ahorros1">
+            <label for="ahorros1">Hasta el 10%</label>
+
+        <input type="radio" name="ahorros" value="2" id="ahorros2">
+            <label for="ahorros2">Hasta el 25%</label>
+
+        <input type="radio" name="ahorros" value="3" id="ahorros3">
+            <label for="ahorros3">Hasta el 50%</label>
+
+        <input type="radio" name="ahorros" value="4" id="ahorros4">
+            <label for="ahorros4">Hasta el 75%</label>
+
+        <input type="radio" name="ahorros" value="5" id="ahorros5">
+            <label for="ahorros5">Hasta el 100%</label>
+
+            <!-- Nivel de ahorros -->
+        <h2>¿Qué porcentaje de tus ahorros invertirías?</h2>
+        <input type="radio" name="inversion" value="1" id="inversion1">
+            <label for="inversion1">Hasta el 10%</label>
+        
+        <input type="radio" name="inversion" value="2" id="inversion2">
+            <label for="inversion2">Hasta el 25%</label>
+        
+        <input type="radio" name="inversion" value="3" id="inversion3">
+            <label for="inversion3">Hasta el 50%</label>
+        
+        <input type="radio" name="inversion" value="4" id="inversion4">
+            <label for="inversion4">Hasta el 75%</label>
+        
+        <input type="radio" name="inversion" value="5" id="inversion5">
+            <label for="inversion5">Hasta el 100%</label>
+        
+        <!-- Horizonte de inversion -->
+        <h2>¿Por cuánto tiempo estarías dispuesto a mantener una inversión?</h2>
+        <input type="radio" name="tiempo" value="1" id="tiempo1">
+            <label for="tiempo1">Menos de 1 año.</label>
+
+        <input type="radio" name="tiempo" value="2" id="tiempo2">
+            <label for="tiempo2">Entre 1 y 3 años.</label>
+
+        <input type="radio" name="tiempo" value="3" id="tiempo3">
+            <label for="tiempo3">Entre 3 y 5 años.</label>
+
+        <input type="radio" name="tiempo" value="4" id="tiempo4">
+            <label for="tiempo4">Entre 5 y 10 años.</label>
+
+        <input type="radio" name="tiempo" value="5" id="tiempo5">
+            <label for="tiempo5">Más de 10 años.</label>
+
+        <!-- Objetivo de inversión -->
+        <h2>¿Qué buscás al invertir?</h2>
+        <input type="radio" name="objetivo" value="1" id="objetivo1">
+            <label for="objetivo1">Obtener rendimientos mensuales fijos.</label>
+        
+        <input type="radio" name="objetivo" value="2" id="objetivo2">
+            <label for="objetivo2">Mantener el valor de mis ahorros.</label>
+        
+        <input type="radio" name="objetivo" value="3" id="objetivo3">
+            <label for="objetivo3">Ganarle a la inflación.</label>
+        
+        <input type="radio" name="objetivo" value="4" id="objetivo4">
+            <label for="objetivo4">Obtener rendimientos entre la tasa de inflación y hasta 5% más que la misma.</label>
+        
+        <input type="radio" name="objetivo" value="5" id="objetivo5">
+            <label for="objetivo5">Obtener rendimientos mayores a 5% sobre la tasa de inflación, aún si eso implica asumir mayores riesgos.</label>
+        
+        <!-- Actitud ante cambios -->
+    
+        <h2>Si al recibir información de tus inversiones, observás una baja importante en el valor de uno de tus activos, ¿Qué proporción de tus inversiones mantendrías?</h2>
+        <input type="radio" name="actitud" value="1" id="actitud1">
+            <label for="actitud1">Me retiro inmediatamente (Vendo el total).</label>
+        
+        <input type="radio" name="actitud" value="2" id="actitud2">
+            <label for="actitud2">Rescato parte de la inversión y el resto lo asigno a productos de menor riesgo.</label>
+        
+        <input type="radio" name="actitud" value="3" id="actitud3">
+            <label for="actitud3">Mi estrategia no varía, ya que creo que para obtener rentabilidades superiores, existe la posibilidad de que hayan rentabilidades negativas (mantengo el total).</label>
+        
+        <input type="radio" name="actitud" value="4" id="actitud4">
+            <label for="actitud4">Sumo más capital para comprar el producto a la baja.</label>
+        
+        <input type="radio" name="actitud" value="5" id="actitud5">
+            <label for="actitud5">Tomo deuda para invertir más de mi capital para comprar el producto a la baja.</label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- Resultado -->
+    <div id="cajaResultado" class="oculto">
+      <div class="container plazofijo p-3 align-items-center">
+          <div class="align-items-center p-5 m-4">
+            <div data-aos="zoom-in">
+              <h1>Qué clase de <span class="text-warning">Inversor</span> eres</h1>
+              <h2><span id="resultado"></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+  
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">
+        Copyright &copy; 2023 Mex Campos
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="./js/testInversor.js"></script>
+</body>
+</html>

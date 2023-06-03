@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
+@media (min-width: 768px) {
+  .correo-input {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  input[type=submit]:hover {
+    background-color: #ffc107; } }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  background-color: #808080; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-weight: 600; }
+
+a {
+  text-decoration: none;
+  color: #fefefe;
+  transition: all 0.4s ease; }
+
+a:visited {
+    color: #7e7e7e;
+  }
+  
+a:hover {
+    color: #7e7e7e;
+  }
+  
+a:active {
+    color: #7e7e7e;
+  }
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  z-index: -2; }
+
+.navbar {
+  box-shadow: 0 12px 20px black;
+  padding-bottom: 5px;
+}
+
+.first-section {
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center; }
+
+.plazofijo {
+  background-color: #808080;
+}
+
+form {
+  display: block;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #cbcbcb;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  color: #000000;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #cccccc;
+  border-color: black;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.productos {
+  min-height: 25vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.oculto {
+  display: none;
+}

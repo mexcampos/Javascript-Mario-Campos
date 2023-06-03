@@ -1,0 +1,97 @@
+// Array con las respuestas
+const respuestas = [];
+
+// Enviar el formulario
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", processForm);
+function processForm(event) {
+    event.preventDefault();
+
+// agregar al array de respuestas los resultados
+const conocimientoInput = document.querySelectorAll('input[name="conocimiento"]:checked');
+respuestas.push(parseInt(conocimientoInput));
+const experienciaInput = document.querySelectorAll('input[name="experiencia"]:checked');
+respuestas.push(parseInt(experienciaInput));
+const ahorrosInput = document.querySelectorAll('input[name="ahorros"]:checked');
+respuestas.push(parseInt(ahorrosInput));
+const inversionInput = document.querySelectorAll('input[name="inversion"]:checked');
+respuestas.push(parseInt(inversionInput));
+const tiempoInput = document.querySelectorAll('input[name="tiempo"]:checked');
+respuestas.push(parseInt(tiempoInput));
+const objetivoInput = document.querySelectorAll('input[name="objetivo"]:checked');
+respuestas.push(parseInt(objetivoInput));
+const actitudInput = document.querySelectorAll('input[name="actitud"]:checked');
+respuestas.push(parseInt(actitudInput));
+}
+
+// funcion .reduce() para sumar los valores obtenidos en las respuestas
+const sum = respuestas.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+console.log(sum);
+
+// Objetos que contienen datos sobre cada tipo de inversor
+const perfiles = [
+    {
+        inversor: "conservador",
+        rentaVariable: 10,
+        rentaFija: 90
+    },
+    {
+        inversor: "conservador/moderado",
+        rentaVariable: 25,
+        rentaFija: 75
+    },
+    {
+        inversor: "moderado",
+        rentaVariable: 50,
+        rentaFija: 50
+    },
+    {
+        inversor: "moderado/arriesgado",
+        rentaVariable: 75,
+        rentaFija: 25
+    },
+    {
+        inversor: "arriesgado",
+        rentaVariable: 90,
+        rentaFija: 10
+    }
+]
+
+// función del mensaje final
+function mensaje() {
+    let perfil;
+  
+    if (sum >= 5 && sum <= 11) {
+      perfil = findPerfil("conservador");
+    } else if (sum > 11 && sum <= 17) {
+      perfil = findPerfil("conservador/moderado");
+    } else if (sum > 17 && sum <= 23) {
+      perfil = findPerfil("moderado");
+    } else if (sum > 23 && sum <= 29) {
+      perfil = findPerfil("moderado/arriesgado");
+    } else if (sum > 29 && sum <= 35) {
+      perfil = findPerfil("arriesgado");
+    } else {
+      alert("Debes ingresar respuestas válidas");
+      return;
+    }
+  
+    console.log(perfil);
+    alert(`Eres un inversor ${perfil.inversor}.\nTu portfolio debería tener un ${perfil.rentaVariable}% de renta variable y un ${perfil.rentaFija}% de renta fija.`);
+  }
+  
+// aplicación metodo .find() para encontrar el perfil del inversor
+  function findPerfil(inversor) {
+    return perfiles.find(p => p.inversor === inversor);
+  }
+  
+mensaje(sum);
+
+// muestra el resultado y oculta el formulario
+function ocultarForm() {
+    formulario.classList.add("oculto");
+  }
+  
+  function mostrarResultado() {
+    cajaResultado.classList.remove("oculto");
+  } 

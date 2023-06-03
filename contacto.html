@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <title>Fields Investment Company</title>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top" data-aos="fade-down">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Fields Investment Company</a>
+
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="nav-link">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="preguntas.html" class="nav-link">Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <br> <br> <br>
+
+  <!-- Sección de info de contacto -->
+  <section class="p-5" data-aos="zoom-in">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center p-3">Información de Contacto</h2>
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Ubicación: </span> Belgrano 50, CABA.
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Teléfono: </span> (11) 4455-7896
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Email: </span> info@fic.com.ar
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </section>
+
+  <!-- Sección de formulario -->
+  <form class="row g-3 p-5" data-aos="zoom-in">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="juan@gmail.com">
+    </div>
+    <div class="col-md-6">
+      <label for="inputName" class="form-label">Tu nombre</label>
+      <input type="name" class="form-control" id="inputName" placeholder="Juan Pérez">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Mensaje</label>
+      <input type="text" class="form-control" id="inputText" placeholder="Tu Menasje" text-area="100px">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Córdoba">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">País</label>
+      <select id="inputState" class="form-select">
+        <option selected>Tu país</option>
+        <option>Argentina</option>
+        <option>Brasil</option>
+        <option>Uruguay</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-dark">Enviar</button>
+    </div>
+  </form>
+
+  <section class="bg-dark text-light p-5 text-center">
+    <div class="container first-section">
+      <div class="d-sm-flex align-items-center justify-content-center">
+        <div data-aos="zoom-in">
+          <h1>Nuestra Ubicación</h1>
+          <p class="lead my-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.163804831887!2d-74.01850818000807!3d40.70520487189823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a17a81551%3A0xc7db393ae1eff521!2sToro%20de%20Wall%20Street!5e0!3m2!1ses-419!2sar!4v1671215958543!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">
+        Copyright &copy; 2022 Mex Campos
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1">
+
+        </i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+</body>
+</html>

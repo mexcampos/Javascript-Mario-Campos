@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+@media (min-width: 768px) {
+    .correo-input{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  background-color: $color-principal;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  z-index: -2;
+}
+
+.navbar {
+  box-shadow: 0 12px 20px black;
+}
+
+.first-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
