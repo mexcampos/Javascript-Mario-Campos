@@ -38,7 +38,7 @@ function processForm(event) {
 
     // Calcular la suma de las respuestas
     const sum = respuestas.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
-    console.log(sum);
+    // console.log(sum);
 
     // Objeto que contiene los datos sobre cada tipo de inversor
     const perfiles = [
@@ -87,7 +87,7 @@ function processForm(event) {
             alert("Debes ingresar respuestas válidas");
             return;
         }
-        console.log(perfil);
+        // console.log(perfil);
 
         document.getElementById("resultado").innerHTML = `Eres un inversor ${perfil.inversor}.\nTu portfolio debería tener un ${perfil.rentaVariable}% de renta variable y un ${perfil.rentaFija}% de renta fija.`;
     }
