@@ -11,6 +11,11 @@
     const objetivo = document.querySelector('input[name="objetivo"]:checked');
     const actitud = document.querySelector('input[name="actitud"]:checked');
 
+    if (!conocimiento || !experiencia || !ahorros || !inversion || !tiempo || !objetivo || !actitud) {
+      Swal.fire('Error', 'Por favor, responde todas las preguntas del formulario', 'error');
+      return;
+    }
+
     // Verifica que se haya seleccionado una opción para cada pregunta
     if (!conocimiento) {
       Swal.fire('Error', 'Por favor, selecciona tu nivel de conocimiento en finanzas', 'error');
