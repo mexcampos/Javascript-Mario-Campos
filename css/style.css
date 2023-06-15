@@ -134,3 +134,33 @@ img {
 .resultado{
   color: #fefefe;
 }
+
+#formulario-contacto{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: 100px;
+}
+#formulario-contacto h2{
+  color: #000000;
+  text-align: center;
+  font-size: 36px;
+}
+#formulario-contacto input{
+  width: 100%;
+}
+#formulario-contacto textarea{
+  width: 100%;
+  height: 30%;
+}
+#formulario-contacto button{
+  width: 100%;
+  height: 5%;
+  margin-top: 10%;
+}
+
+#questions{
+  margin-top: 5%;
+}
